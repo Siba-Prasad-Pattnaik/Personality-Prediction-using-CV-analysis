@@ -1,1 +1,7 @@
-# Personality-Prediction-using-CV-analysis
+# Personality-Prediction-using-CV-Analysis
+## Problem Statement
+A Personality Prediction System using CV (Conscientiousness and Extraversion) analysis is a computational approach that utilizes machine learning algorithms and data analysis techniques to predict an individual's personality traits, specifically conscientiousness and extraversion, based on various data inputs, typically from a person's CV (curriculum vitae) or resume.
+## Description
+The system aims to predict the personality of individuals based on their gender, age, and scores in openness, neuroticism, conscientiousness, agreeableness, and extraversion. The input data is in the form of a CSV file containing the relevant features and the corresponding personality class label. The features (Gender, Age, openness, neuroticism, conscientiousness, agreeableness, and extraversion) and the target variable ('Personality (Class label)') are extracted from the DataFrame.
+The categorical variables in the 'X' DataFrame (Gender) are converted into numerical variables using one-hot encoding. The data is split into training and testing sets, 80% of the data is used for training and 20% for testing, with a random seed of 42 for reproducibility. A logistic regression model is created and the model is trained on the training data. Predictions are made on the testing data and the predicted labels are stored.
+The accuracy of the model is calculated using the accuracy_score() function from sklearn, which compares the predicted labels with the actual labels. The classification report, which includes precision, recall, and F1-score, is calculated.
